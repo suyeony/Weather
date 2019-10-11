@@ -1,0 +1,16 @@
+body {
+    background-image: url("/images/pexels-photo-314726.jpeg");
+}
+
+.title {
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.forecast {
+
+}
