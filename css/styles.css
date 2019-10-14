@@ -1,5 +1,5 @@
 body {
-    background-image: url("/images/pexels-photo-314726.jpeg");
+    background-image: url("/images/sky.jpg");
 }
 
 .title {
@@ -9,8 +9,22 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 150px;
+    font-size: 50px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .forecast {
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
 
+.forecast--list {
+    list-style: none;
 }
