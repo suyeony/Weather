@@ -9,8 +9,10 @@
     console.log(data.main.temp);
     console.log(data.weather[0].icon);
     console.log(data.weather[0].main);
-    document.getElementById("forecast--list").innerHTML = data.weather[0].main
-    document.getElementById("forecast--list").innerHTML = data.main.temp
+    document.getElementById("forecast--icon").innerHTML = '<img src="'+'http://openweathermap.org/img/win/'+
+            data.weather[0].icon+'.png"></img>'
+    document.getElementById("forecast--main").innerHTML = data.weather[0].main
+    document.getElementById("forecast--temp").innerHTML = data.main.temp + "  F"
     });
 
 

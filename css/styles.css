@@ -16,15 +16,25 @@ body {
 }
 
 .forecast {
+    box-sizing: border-box;
     border-color: black;
     border-style: solid;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 0;
+    width: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .forecast--unlist {
     list-style: none;
+}
+
+.forecast--unlist li {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
