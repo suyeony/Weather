@@ -3,14 +3,7 @@
     
     const ul = document.getElementById('forecast--list');
     const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + input + '&appid=69c507e0506449860f549fde4514f6f8&units=imperial';
-
- 
-
-    function buttonClick() {
-        button.addEventListener("click", search)
-    }
-
- 
+    
 
     function search() {
     fetch(url)
@@ -30,7 +23,13 @@
     });
 }
 
-window.addEventListener("load", buttonclick);
+
+    button.addEventListener("click", search);
+
+
+window.addEventListener("load", buttonClick);
+ 
+
 
 
 
