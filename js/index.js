@@ -1,11 +1,11 @@
-    const input  = document.getElementById("myinput");
-    const button = document.getElementById("search_button");
-    
-    const ul = document.getElementById('forecast--list');
-    const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + input + '&appid=69c507e0506449860f549fde4514f6f8&units=imperial';
-    
+const button = document.getElementById("search_button");
+const input  = document.getElementById("myinput");
+const ul = document.getElementById('forecast--list');
+const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + input + '&appid=69c507e0506449860f549fde4514f6f8&units=imperial';
 
-    function search() {
+
+
+ function search() {    
     fetch(url)
     .then((resp) => resp.json()) // Transform the data into json
     .then(function(data) {
@@ -23,9 +23,9 @@
     });
 }
 
-
+function buttonClick() {
     button.addEventListener("click", search);
-
+}
 
 window.addEventListener("load", buttonClick);
  
