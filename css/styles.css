@@ -16,14 +16,24 @@ body {
 }
 
 .search {
-  
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0);
+    
+    
 }
 .search input{
     font-size: 20px;
+    background: transparent;
+    border-color: #ffffff;
 }
 
 form.search button {
     font-size: 20px;
+    background: transparent;
 }
 
 .forecast {
@@ -34,6 +44,7 @@ form.search button {
     justify-content: center;
     text-align: center;
     align-items: center;
+    
     
 }
 
