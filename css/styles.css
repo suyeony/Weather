@@ -1,5 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url("/images/sky.jpg");
+    width: 100%;
+    height: 100%;
 }
 
 .title {
@@ -21,20 +28,37 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color:rgba(0, 0, 0, 0);
     
-    
-}
-.search input{
-    font-size: 20px;
-    background: transparent;
-    border-color: #ffffff;
 }
 
-form.search button {
+.search input{
+    top: 50%;
     font-size: 20px;
-    background: transparent;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    width: 300px;
 }
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.search button {
+    position: absolute;
+    color: #fff;
+    top: 250px;
+    right: 495px;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    transform: translateY(-30%);
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
 
 .forecast {
     box-sizing: border-box;
@@ -43,8 +67,6 @@ form.search button {
     display: flex;
     justify-content: center;
     text-align: center;
-    align-items: center;
-    
     
 }
 
