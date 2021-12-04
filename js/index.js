@@ -1,7 +1,7 @@
 function search() {    
     const input  = document.getElementById("myinput").value;
     const ul = document.getElementById('forecast--list');
-    const url = 'http://api.openweathermap.org/data/2.5/weather?q=' + input + '&appid=69c507e0506449860f549fde4514f6f8&units=imperial';
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + input + '&appid=69c507e0506449860f549fde4514f6f8&units=imperial';
 
 
     fetch(url)
