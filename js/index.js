@@ -28,6 +28,11 @@ function buttonClick() {
 }
 
 window.addEventListener("load", buttonClick);
+document.querySelector('#myinput').addEventListener("keypress", function(e) {
+    if (e.key === 'Enter') {
+        search();
+    }
+});
  
 
 
