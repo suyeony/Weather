@@ -4,13 +4,13 @@
 }
 
 body {
-    background-image: url("../images/sky.jpg");
+    background-color: #F0F7FC;
     width: 100%;
     height: 100%;
 }
 
 .title {
-    color: #ffffff;
+    /*color: #ffffff;*/
     display: flex;
     text-align: center;
     justify-content: center;
@@ -22,7 +22,22 @@ body {
     font-style: italic;
 }
 
-.search {
+.forecast {
+    /*display: flex;*/
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.forecast-box {
+    background-color: #ffff;
+    
+}
+
+
+.forecast-search {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -31,20 +46,20 @@ body {
     
 }
 
-.search input{
+.forecast-search input{
     top: 50%;
     font-size: 20px;
     position: relative;
     background: rgba(0, 0, 0, 0.3);
-    border: 2px solid #fff;
+    border: 2px solid black;
     border-radius: 10px;
-    color: #fff;
+    /*color: #fff;*/
     width: 300px;
     padding-left: 10px;
 }
 
 ::-webkit-input-placeholder {
-    color: #fff;
+    /*color: #fff;*/
     padding-left: 10px;
 }
 
@@ -53,20 +68,13 @@ input:focus::placeholder {
 }
 
 .search button {
-    color: #fff;
+    /*color: #fff;*/
     background: rgba(0, 0, 0, 0.2);
     font-size: 15px;
     background-color: transparent;
     outline: none;
     border: none;
     padding-left: 20px;
-}
-
-
-.forecast {
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }
 
 .forecast--unlist--initial {
@@ -78,7 +86,6 @@ input:focus::placeholder {
     list-style: none;
     box-sizing: border-box;
     border-color: #fff;
-    border-style: dotted;
     padding: 30px;
 }
 
@@ -88,9 +95,16 @@ input:focus::placeholder {
 }
 
 .forecast--unlist li {
-    color: #ffffff;
-    font-size: 40px;
+    /*color: #ffffff;*/
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
+}
+
+.ul-flex {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 

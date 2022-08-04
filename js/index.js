@@ -11,6 +11,7 @@ function search() {
     }
 
     else {
+        document.querySelector('.date').innerHTML = Date();
         fetch(url)
         .then((resp) => resp.json()) // Transform the data into json
         .then(function(data) {
@@ -24,23 +25,25 @@ function search() {
                 console.log(data.main.temp);
                 console.log(data.weather[0].icon);
                 console.log(data.weather[0].main);
+                document.getElementById("humidity").innerHTML = "Humidity";
+                document.getElementById("wind").innerHTML = "Wind Speed";
                 document.getElementById("forecast--icon").innerHTML =
                 '<img src="http://openweathermap.org/img/wn/' +
                 data.weather[0].icon +
                 '.png"></img>';
-                document.getElementById("forecast--city").innerHTML = input;
-                document.getElementById("forecast--main").innerHTML = data.weather[0].main;
+                //document.getElementById("forecast--city").innerHTML = input;
                 document.getElementById("forecast--temp").innerHTML = data.main.temp + "  F";
+                document.getElementById("forecast--main").innerHTML = data.weather[0].main;
+                document.getElementById("forecast--humidity").innerHTML = data.main.humidity;
+                document.getElementById("forecast--wind").innerHTML = data.wind.speed;
 
+                //document.querySelector('.forecast-part').removeAttribute("hidden");
                 document.querySelector('.forecast ul').classList.add('forecast--unlist');
                 document.querySelector('.forecast ul').classList.remove('forecast--unlist--initial');
             }
 
-        });
-
-    
+        });   
     }
-
 
 }   
 

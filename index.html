@@ -6,28 +6,42 @@
     href="css/styles.css" media="screen" />
 
     <title>Weather Forecast</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
     <body>
         <div class="title">
             WEATHER FORECAST
         </div>
         
-          <div class="search">
+        <div class="forecast-box">
+
+          <div class="forecast-search">
+            <h4> Your city </h4>
             <input type="text" id="myinput" placeholder="Search..">
             <button type="button" id="search_button"><i class="fa fa-search"></i></button>
           </div>
-  
 
-        <div class="forecast">
-            <ul class="forecast--unlist--initial">
-              <li id="forecast--city"></li>
-              <li id="forecast--icon"></li>
-              <li id="forecast--main"></li>
-              <li id="forecast--temp"></li>
-            </ul>
-        </div>
-        <script src="js/index.js">
-        </script>
+          <div class="forecast">
+              <div class="date"></div>
+              <div class="ul-flex">
+                <ul class="forecast--unlist ul-flex">
+                  <li id="forecast--icon"></li>     
+                  <li id="forecast--temp"></li>
+                </ul>
+              </div>
+              <div id="forecast--main"></div>
+              <div class="ul-flex">
+                <ul class="forecast--unlist">
+                  <li id="humidity"></li>
+                  <li id="forecast--humidity"></li>
+                </ul>
+                <ul class="forecast--unlist">
+                  <li id="wind"></li>
+                  <li id="forecast--wind"></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+        <script src="js/index.js"></script>
+        <script src="https://kit.fontawesome.com/c3c7e876f2.js" crossorigin="anonymous"></script>
     </body>
 </html>
