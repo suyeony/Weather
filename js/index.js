@@ -34,8 +34,8 @@ function search() {
                 //document.getElementById("forecast--city").innerHTML = input;
                 document.getElementById("forecast--temp").innerHTML = data.main.temp + "  F";
                 document.getElementById("forecast--main").innerHTML = data.weather[0].main;
-                document.getElementById("forecast--humidity").innerHTML = data.main.humidity;
-                document.getElementById("forecast--wind").innerHTML = data.wind.speed;
+                document.getElementById("forecast--humidity").innerHTML = data.main.humidity + "%";
+                document.getElementById("forecast--wind").innerHTML = data.wind.speed + " km/j";
 
                 //document.querySelector('.forecast-part').removeAttribute("hidden");
                 document.querySelector('.forecast ul').classList.add('forecast--unlist');
